@@ -1,0 +1,42 @@
+{% extends 'main.html' %} {% block content %}
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>
+                <h5>Emple id</h5>
+            </th>
+            <th>
+                <h5>First name</h5>
+            </th>
+            <th>
+                <h5>Middle initial</h5>
+            </th>
+            <th>
+                <h5>Las name</h5>
+            </th>
+            <th>
+                <h5>Email</h5>
+            </th>
+            <th>
+                <h5>Fun Fac</h5>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{object.emple_id }}</td>
+            <td>{{object.first_name }}</td>
+            <td>{{ object.midle_i }}</td>
+            <td>{{ object.last_name }}</td>
+            <td>{{object.emails }}</td>
+            <td>{{ object.fun_fac }}</td>
+        </tr>
+    </tbody>
+</table>
+<div class="littl_box">
+    <a href="/Porfolio/list"><button class="btn btn-danger">previous page</button></a>
+    <h4>or</h4>
+    <a href="/Porfolio/join"><button>join page</button></a>
+</div>
+</span> {% endblock %}

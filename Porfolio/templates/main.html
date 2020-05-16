@@ -1,0 +1,31 @@
+<!DOCTYPE html> {% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8" content="">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+    <title>Django</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Hello Django world from Mamadou B Diallo</h1>
+        <nav>
+            <ul>
+                <li><a href="/Porfolio/home">Home Page</a></li>
+                <li><a href="/Porfolio/about">About Page</a></li>
+                <li><a href="/Porfolio/cont">Contact Page</a></li>
+                <li><a href="/Porfolio/info">Information Page</a></li>
+                <li><a href="/Porfolio/join">Registration Page</a></li>
+                <li><a href="/Porfolio/list">Members Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {% block content %} {% endblock %}
+</body>
+
+</html>

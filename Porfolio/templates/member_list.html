@@ -1,0 +1,9 @@
+{% extends 'main.html' %} {% block content %}
+
+<h3>This is the Members Pages</h3>
+<div class="flex-box1">
+    {% for i in object_list %}
+    <p><a href="{{ i.get_absolute_urls }}">{{ i.first_name }}</a></p>
+    {% endfor %}
+</div>
+{% endblock %}
